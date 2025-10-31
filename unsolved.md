@@ -9,4 +9,6 @@ Both subarrays nums[a..a + k - 1] and nums[b..b + k - 1] are strictly increasing
 The subarrays must be adjacent, meaning b = a + k.
 Return true if it is possible to find two such subarrays, and false otherwise.
 
+#### I think this problem was in easy because it didnt have any other complex datastructure than array, but wtf...
+
  
