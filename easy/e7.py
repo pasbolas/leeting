@@ -79,6 +79,10 @@ class StackSolution:
                 if not stack or character != pairs[stack[-1]]:
                     return False
                 stack.pop()
+        
+        if len(stack) != 0:
+            return False
+        
         return True
 
-print(StackSolution.isValid("([)]"))
+print(StackSolution.isValid("("))
