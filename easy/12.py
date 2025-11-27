@@ -6,16 +6,24 @@ Increment the large integer by one and return the resulting array of digits.
 
 
 class Solution:
-    def plusOne(self, digits: List[int]) -> List[int]:
-        string = ""
-        for num in digits:
-            string += str(num)
-        num_string = int(string)
-        num_string = num_string + 1
-        string_num = str(num_string)
+    def plusOne(self, digits):
 
-        array = []
-        for word in string_num:
-            array.append(int(word))
-        return array
+        i = len(digits) - 1
+        
+        while i >= 0:
+
+            # add one if the digit is < 9 and return the value otherwise if its 9 put 0 in place of it
+            if digits[i] < 9:
+                digits[i] += 1
+                return digits
+            
+            digits[i] = 0
+            i -= 1
+            print(digits)
+        
+        # this is a nuke button in case all digits are 9
+        return [1] + digits
+
+
+print(Solution().plusOne([1,0,9]))
         
