@@ -1,5 +1,6 @@
 # Ugly Solution // Didnt use stack
 
+# closing mathing brackets 
 class Solution:
     def isValid(self, s: str) -> bool:
 
