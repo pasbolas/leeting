@@ -1,4 +1,4 @@
-# 🧠 Leeting — My LeetCode Solutions
+# 🧠 Leeting - My LeetCode Solutions
 
 
 ### I AM LEETING RN AAAAAHHHHHH
