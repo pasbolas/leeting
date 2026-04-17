@@ -66,7 +66,6 @@ class Solution:
         
 
 # Beautiful Solution we used stacks here:
-
 class StackSolution:
     def isValid(s: str) -> bool:
 
@@ -86,4 +85,7 @@ class StackSolution:
         
         return True
 
-print(StackSolution.isValid("("))
+if __name__ == "__main__":
+    print(StackSolution.isValid("(){}[]")) # True
+    print(StackSolution.isValid("([)]")) # False
+    print(StackSolution.isValid("{[]}")) # True
