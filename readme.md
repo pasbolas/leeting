@@ -1,3 +1,3 @@
 # My LeetCode Problem Solutions
 
-[![My Profile](https://leetcode.com/u/saujix/)]
+[My Profile](https://leetcode.com/u/saujix/)
