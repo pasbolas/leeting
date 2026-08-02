@@ -15,7 +15,6 @@ class Solution:
             result.append(rootNode.val) 
             if rootNode.right:
                 traversal(rootNode.right, result)
-            
             return result
         
         output = traversal(root, [])
