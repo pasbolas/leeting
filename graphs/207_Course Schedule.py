@@ -19,11 +19,12 @@ class Solution:
         # we got a dict with list as value for a key
         for a,b in prerequisites:
             preDict[a].append(b)
-
+        
+        # courses I have already checked and don't contain cycles
         safe = set()
         
         def dfs(father):
-
+            
             if father in safe:
                 return True
 
@@ -31,7 +32,7 @@ class Solution:
                 return False
             
             visiting.add(father)
-
+            
             for child in preDict[father]:
                 status = dfs(child)
                 if status == False:

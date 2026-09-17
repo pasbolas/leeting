@@ -30,6 +30,8 @@ class Solution:
                 dfs(grid,i_row,i_column - 1)
 
         count = 0
+        # go over all items, if they are 1, that means -> they are never touched before,
+        # we make everything surrounding them 0, kinda eliminate the island, and increase count by one 
         for i_row in range(len(grid)):
             for i_column in range(len(grid[0])):
                 if grid[i_row][i_column] == "1":
